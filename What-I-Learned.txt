@@ -1,0 +1,11 @@
+Lessons learned:
+
+-Plan as thoroughly as you can, working out every problem before code is laid down.
+	You can never plan too much. A good plan saves hour of coding issues/debugging.
+	This also helps partners/teams work independently with a complete understanding of the problem and solution.
+-Work from the bottom up. Start at the smallest unit and build on top of that after the plan is created.
+	Make sure you know the exact functionality of what will be created/called before you start building
+	the overall environment of your code. Things are bound to change somewhat, and knowing what syntax
+	you used on the smaller portions is helpful.
+-Always communicate with your partner on what needs to be done, and what is currently being touched/pushed.
+	Avoid merge errors and make sure everyone knows their roles/expectations.
