@@ -18,29 +18,6 @@ public class Inventory {
         return productMap;
     }
 
-    /*
-    Map<String, int> stockList
-    SlotID, Count
-    Map<String, Product> productList
-    SlotID, product obj
-
-    public double getProductPrice(slotID) {
-    return productList.get(slotID).getPrice();
-    }
-
-    boolean validateStock(slotID) {
-    if (stockList.get(slotID) <= 0) {
-    return false
-    } else return true
-    }
-
-    return product grabProduct(slotID) {
-        int stock = stockList.get(slotID)
-        stockList.put(slotID, stock - 1);
-        return productList.get(slotID)
-    }
-    */
-
     public Inventory() {
         String filePath = "vendingmachine.csv";
         File inputFile = new File(filePath);
@@ -107,12 +84,6 @@ public class Inventory {
             return true;
         }
     }
-
-//    public Product grabProduct(String slotID) {
-//        int stockNum = stockMap.get(slotID);
-//        stockMap.put(slotID, stockNum - 1);
-//        return productMap.get(slotID);
-//    }
 
     public String showItems() {
         // iterate through stock map

@@ -35,8 +35,7 @@ public class VendingMachine {
         put("Little League Chew", 0);
         put("Chiclets", 0);
         put("Triplemint", 0);
-    }}; //could have made a separate method for reading the input file then called that method to receive the product names or
-    // even went through product map and did a toString on products
+    }};
 
 
 
@@ -81,8 +80,6 @@ public class VendingMachine {
         }
     }
 
-
-
     public void finalSalesReport() {
         DateTimeFormatter dateTime = DateTimeFormatter.ofPattern("MMddyyyy_HHmm");
         String dateAndTime = dateTime.format(LocalDateTime.now());
@@ -100,55 +97,5 @@ public class VendingMachine {
             System.err.println("Sales Report not created");
         }
     }
-
-//    File tempReport = new File("tempReport.txt");
-//        try(FileWriter writer = new FileWriter(tempReport, true)) {
-//            Scanner fileReader = new Scanner(tempReport);
-//            if (!tempReport.exists()) {
-//                tempReport.createNewFile();
-//                for(String key : keys) {
-//                    writer.write(productList.get(key).getName() + "\\|" + 0);
-//                }
-//            }
-//            while(fileReader.hasNextLine()){
-//                if(fileReader.nextLine().contains(name.toString())) {
-//                    String[] lineWords = fileReader.nextLine().split("\\|");
-//                    int productCount = Integer.parseInt(lineWords[lineWords.length - 1]);
-//                    productCount++;
-//                    lineWords[lineWords.length - 1] = String.valueOf(productCount);
-//                }
-//            }
-//        } catch(IOException e) {
-//            System.err.println("Audit Log not created");
-//        }
-
-
-
-
-    /* attributes
-     * Inventory currentInventory = new Inventory;
-     * CashDrawer currentDrawer = new CashDrawer;
-     * UserInterface ui = new UserInterface;
-     */
-
-    /* constructor
-    *
-    *
-     */
-
-    /* methods
-    *
-    * finalSalesReport
-    *   create new file, of current days purchase log.txt
-    *   named date and time
-    *   write sales report to file
-    *
-    * purchaseAudit
-    *   every successful purchase writes to log.txt with date, time, feed money, purchase money
-    *   look at README example
-    *
-     */
-
-    // run UI method
 
 }
